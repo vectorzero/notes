@@ -1,5 +1,5 @@
 # notes
 
-## vue起步
+### vue起步
 
-## es6
+### es6
