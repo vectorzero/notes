@@ -208,3 +208,22 @@ export default {
   }
 }
 ```
+
+## 引入amap
+在**mian.js**中添加以下代码：
+```javascript
+import AMap from 'vue-amap'
+Vue.use(AMap)
+
+AMap.initAMapApiLoader({
+  // 申请的高德key
+  key: 'YOUR_KEY',
+  // 插件集合
+  plugin: ['']
+});
+```
+
+#### 使用代码：
+```html
+<el-amap vid="amapDemo"></el-amap>
+```
