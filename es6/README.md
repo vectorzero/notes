@@ -1,8 +1,8 @@
 # ES6
 
 ## 跨模块常量
-//a.js
 ```javascript
+//a.js
 export const A = 1;
 export const B = 2;
 ```
