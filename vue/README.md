@@ -141,7 +141,7 @@ new Vue({
 ```
 
 ## 安装less
-`cnpm i less less-loader --S`
+`cnpm i less less-loader -S`
 
 ## 引入less
 在**webpack.base.conf.js**里面添加以下代码
