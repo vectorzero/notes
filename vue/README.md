@@ -51,32 +51,6 @@ import 'font-awesome/css/font-awesome.css'
 <i class="fa fa-fw fa-weibo"></i>
 ```
 
-## 安装 less
-`cnpm i less less-loader -S` 
-
-## 引入 less
-在**webpack.config.js**文件中添加以下代码
-```javascript
-
-{
-    test: /\.less$/,
-    loader: "style-loader!css-loader!less-loader"
-}
-```
-
-#### 使用代码:
-```html
-<style scoped lang='less'>
-    .hi {
-        color: red;
-        font-size: 0.45rem;
-        h2 {
-        color: blue;
-        }
-    }
-</style>
-```
-
 ## 安装axios
 `cnpm i axios -S`
 
