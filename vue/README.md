@@ -202,3 +202,33 @@ AMap.initAMapApiLoader({
 ```html
 <el-amap vid="amapDemo"></el-amap>
 ```
+
+## vue使用jsx语法：
+
+`cnpm i babel-helper-vue-jsx-merge-props --save-dev`
+`cnpm i babel-plugin-syntax-jsx --save-dev`
+`cnpm i babel-plugin-transform-vue-jsx --save-dev`
+
+在**.babelrc**里面添加/修改以下代码：
+```
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"
+  ],
+  "plugins": ["transform-runtime","transform-vue-jsx"],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": ["istanbul"]
+    }
+  }
+}
+```
+
+
