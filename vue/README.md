@@ -211,7 +211,7 @@ AMap.initAMapApiLoader({
 
 `cnpm i babel-plugin-transform-vue-jsx --save-dev`
 
-在**.babelrc**里面添加/修改以下代码：
+在**babelrc**文件里面添加/修改以下代码：
 ```
 {
   "presets": [
