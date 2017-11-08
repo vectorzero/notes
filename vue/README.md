@@ -28,7 +28,7 @@
 `npm run dev`
 
 ## 安装elementUI
-`cnpm i element-ui -S`
+`cnpm i element-ui --save-dev`
 
 ## 引入elementUI
 在**main.js**中添入以下代码
@@ -39,7 +39,7 @@ Vue.use(ElementUI)
 ```
 
 ## 安装 font-awesome
-`cnpm i font-awesome -S`
+`cnpm i font-awesome --save-dev`
 
 ## 引入font-awesome
 在**main.js**里面添加以下代码
@@ -53,7 +53,7 @@ import 'font-awesome/css/font-awesome.css'
 ```
 
 ## 安装axios
-`cnpm i axios -S`
+`cnpm i axios --save-dev`
 
 ## 引入axios
 在 **main.js** 文件中添加以下代码
@@ -64,7 +64,7 @@ Vue.prototype.$http = axios
 
 #### 使用代码：
 ```javascript
-this.$http(‘http://localhost:8080/static/data.json’)
+this.$http('http://localhost:8080/static/data.json')
   .then((response)=>{
     let data = response.data;
   })
@@ -74,7 +74,7 @@ this.$http(‘http://localhost:8080/static/data.json’)
 ```
 
 ## 安装vuex
-`cnpm i vuex -S`
+`cnpm i vuex --save-dev`
 
 ## 引入vuex
 在**mian.js**中添加以下代码：
@@ -116,7 +116,7 @@ new Vue({
 ```
 
 ## 安装less
-`cnpm i less less-loader -S`
+`cnpm i less less-loader --save-dev`
 
 ## 引入less
 在**webpack.base.conf.js**里面添加以下代码
@@ -144,13 +144,13 @@ module: {
 ```
 
 ## 安装vux
-`cnpm i vux -S`
+`cnpm i vux --save-dev`
 `cnpm i vux-loader`
 
 ## 引入vux
 在**webpack.base.conf.js**里面添加/修改以下代码
 ```javascript
-const vuxLoader = require(‘vux-loader’)
+const vuxLoader = require('vux-loader')
 //module.exports = {
 let webpackConfig = {
   entry: {
