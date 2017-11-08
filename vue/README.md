@@ -15,8 +15,6 @@
 ## 创建一个基于 webpack 模板的新项目
 `vue init webpack vuecli`
 
-**(`vue init webpack-simple vuecli`)**
-
 **（一直回车，只有vue-router选择y，其他均选择n）**
 
 ## 安装依赖
