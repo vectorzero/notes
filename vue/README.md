@@ -167,6 +167,10 @@ module.exports = vuxLoader.merge(webpackConfig, {
     ]
 })
 ```
+在**index.html**里面添加以下代码
+```html
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+```
 
 #### 使用代码：
 ```html
