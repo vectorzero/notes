@@ -31,8 +31,8 @@
 在**main.js**中添入以下代码
 ```javascript
 import ElementUI from 'element-ui' 
-import 'element-ui/lib/theme-default/index.css'
-Vue.use(ElementUI)
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI, { size: 'small' })
 ```
 
 ## 安装 font-awesome
