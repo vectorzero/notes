@@ -4,4 +4,4 @@
 
 ### [es6](https://github.com/vectorzero/notes/tree/master/es6)
 
-### [parcel](https://github.com/vectorzero/notes/tree/master/parcel.md)
+### [parcel](https://github.com/vectorzero/notes/tree/master/Parcel.md)
