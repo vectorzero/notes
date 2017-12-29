@@ -33,6 +33,8 @@
 
 #### React
 
+`npm i -S parcel-bundler react react-dom babel-preset-env babel-preset-react`
+
 ```javascript
 //新建 .babelrc
 {
