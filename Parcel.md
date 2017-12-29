@@ -5,11 +5,11 @@
 *node 7.6 以上*
 
 `npm install -g parcel-bundler`
+
 `npm init -y`
 
-*index.html*
-
 ```html
+<!-- 新建 index.html -->
 <html>
 <body>
   <script src="./index.js"></script>
@@ -17,14 +17,13 @@
 </html>
 ```
 默认地址端口为 [localhost:1234](http://localhost:1234)
-修改端口 `parcel index.html -p 3304`
+
+修改端口示例 `parcel index.html -p 3304`
 
 ### 集成技术栈
 
-新建 index-react.html、index-vue.html、index-ts.html 入口文件
-
-*package.json*
 ```javascript
+//package.json
 "scripts": {
   "react": "parcel index-react.html",
   "vue": "parcel index-vue.html",
@@ -34,15 +33,15 @@
 
 #### React
 
-新建 *.babelrc*
-```
+```javascript
+//新建 .babelrc
 {
   "presets": ["env","react"]
 }
 ```
 
-*index-react.html*
 ```html
+<!-- 新建 index-react.html -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -56,8 +55,8 @@
 </html>
 ```
 
-*src/react/index.js*
 ```javascript
+//新建 src/react/index.js
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 class Hello extends Component {
@@ -74,8 +73,8 @@ ReactDOM.render(<Hello />, document.getElementById('react-app'));
 
 `npm i -S vue parcel-plugin-vue`
 
-*index-vue.html*
 ```html
+<!-- 新建 index-vue.html -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -89,8 +88,8 @@ ReactDOM.render(<Hello />, document.getElementById('react-app'));
 </html>
 ```
 
-*src/vue/index.js*
 ```javascript
+//新建 src/vue/index.js
 import Vue from 'vue';
 import App from './app.vue';
 new Vue({
@@ -99,8 +98,8 @@ new Vue({
 })
 ```
 
-* src/vue/app.vue*
-```
+```html
+<!-- 新建 src/vue/app.vue -->
 <template>
     <div>
         <h1>Hello Vue</h1>
@@ -113,8 +112,8 @@ new Vue({
 #### TypeScript
 `npm i -S typescript`
 
-*index-ts.html*
 ```html
+<!-- 新建 index-ts.html -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -128,8 +127,8 @@ new Vue({
 </html>
 ```
 
-*src/typescript/index.ts*
-```javascript
+```typescript
+//新建 src/typescript/index.ts
 interface Name {
     value: string;
 }
