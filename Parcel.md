@@ -16,7 +16,7 @@
 </body>
 </html>
 ```
-默认地址端口为 (localhost:1234)[http://localhost:1234]
+默认地址端口为 [localhost:1234](http://localhost:1234)
 修改端口 `parcel index.html -p 3304`
 
 ### 集成技术栈
