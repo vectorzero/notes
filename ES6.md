@@ -1,5 +1,35 @@
 # ES6
 
+## 模板字符串
+```js
+let a = ~~(Math.random())*10;
+console.log(`hello,${a}`);
+```
+
+## 扩展运算符
+```js
+const a = [1,2,3];
+const b = [4,...a,6];
+console.log(b); //[4,1,2,3,6]
+
+const {c,d,...z} = {c:1,d:2,e:4,f:6};
+console.log(c) //1
+console.log(d) //2
+console.log(z) //{e:4,f:6}
+```
+
+## Array.find 简写
+```js
+const arr = [
+    {name:'aa',value:'1',type:'a'},
+    {name:'bb',value:'2',type:'b'},
+    {name:'cc',value:'3',type:'c'},
+    {name:'cc',value:'4',type:'d'}    
+]
+const obj = arr.find(item => item.name === 'aa' && item.value === '1');
+console.log(obj) // {name:'aa',value:'1',type:'a'}
+```
+
 ## 跨模块常量
 ```javascript
 //a.js
