@@ -22,20 +22,8 @@
 			}
 		},
 		components: {
-            draggable,
-        },
-		mounted() {
-			//this.hello()
-		},
-		methods: {
-			hello() {
-				this.getAjax('/mktmfc/goodstype/getAll')
-						.then(result => {
-								console.log(111,result)
-						})
-			} 
-		}
-			
+            		draggable,
+        	}
 	}
 </script>
 
