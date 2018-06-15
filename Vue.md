@@ -62,7 +62,7 @@ Vue.prototype.$http = axios
 
 #### 使用代码：
 ```javascript
-this.$http('http://localhost:8080/static/data.json')
+this.$http({method:'get',url:'http://localhost:8080/static/data.json',param:{}})
   .then((response)=>{
     let data = response.data;
   })
