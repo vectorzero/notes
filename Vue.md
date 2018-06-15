@@ -64,10 +64,10 @@ Vue.prototype.$http = axios
 ```javascript
 this.$http({method:'get',url:'http://localhost:8080/static/data.json',param:{}})
   .then((response)=>{
-    let data = response.data;
+    console.log(response.data)
   })
-  .catch((response)=>{
-    console.log(response)
+  .catch((error)=>{
+    console.log(error)
   })
 ```
 
