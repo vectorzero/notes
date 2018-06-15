@@ -7,9 +7,9 @@
 ## 安装淘宝镜像 cnpm
 `npm install -g cnpm --registry=https://registry.npm.taobao.org`
 
-## 全局安装 vue-cli
+## 全局安装 vue-cli 2.x
 关闭cmd窗口，到放项目的目录下shift+右键打开命令行窗口
-`cnpm i vue-cli -g`
+`cnpm i -g @vue/cli-init`
 
 ## 创建一个基于 webpack 模板的新项目
 `vue init webpack vuecli`
