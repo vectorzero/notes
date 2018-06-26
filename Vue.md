@@ -1,4 +1,4 @@
-## 下载nodejs （win64位，版本最好为6.x）
+## 下载nodejs （win64位，版本最好为6.x以上）
 - [下载node.js](http://nodejs.cn/download/)
 - 安装nodejs
 
