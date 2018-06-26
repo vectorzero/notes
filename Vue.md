@@ -35,21 +35,6 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI, { size: 'small' })
 ```
-
-## 安装 font-awesome
-`cnpm i font-awesome --save-dev`
-
-## 引入font-awesome
-在**main.js**里面添加以下代码
-```javascript
-import 'font-awesome/css/font-awesome.css'
-```
-
-#### 使用代码：
-```html
-<i class="fa fa-fw fa-weibo"></i>
-```
-
 ## 安装axios
 `cnpm i axios --save-dev`
 
@@ -140,6 +125,51 @@ module: {
 }
 </style>
 ```
+## 在vue里面使用jsx语法：
+
+`cnpm i babel-helper-vue-jsx-merge-props --save-dev`
+
+`cnpm i babel-plugin-syntax-jsx --save-dev`
+
+`cnpm i babel-plugin-transform-vue-jsx --save-dev`
+
+在**babelrc**文件里面添加/修改以下代码：
+```
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"
+  ],
+  "plugins": ["transform-runtime","transform-vue-jsx"],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": ["istanbul"]
+    }
+  }
+}
+```
+
+`以下可以不用安装`
+
+## 安装 font-awesome
+`cnpm i font-awesome --save-dev`
+
+## 引入font-awesome
+在**main.js**里面添加以下代码
+```javascript
+import 'font-awesome/css/font-awesome.css'
+```
+
+#### 使用代码：
+```html
+<i class="fa fa-fw fa-weibo"></i>
+```
 
 ## 安装vux
 `cnpm i vux --save-dev`
@@ -203,36 +233,6 @@ AMap.initAMapApiLoader({
 #### 使用代码：
 ```html
 <el-amap vid="amapDemo"></el-amap>
-```
-
-## 在vue里面使用jsx语法：
-
-`cnpm i babel-helper-vue-jsx-merge-props --save-dev`
-
-`cnpm i babel-plugin-syntax-jsx --save-dev`
-
-`cnpm i babel-plugin-transform-vue-jsx --save-dev`
-
-在**babelrc**文件里面添加/修改以下代码：
-```
-{
-  "presets": [
-    ["env", {
-      "modules": false,
-      "targets": {
-        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
-      }
-    }],
-    "stage-2"
-  ],
-  "plugins": ["transform-runtime","transform-vue-jsx"],
-  "env": {
-    "test": {
-      "presets": ["env", "stage-2"],
-      "plugins": ["istanbul"]
-    }
-  }
-}
 ```
 
 
