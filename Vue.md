@@ -155,7 +155,7 @@ module: {
 }
 ```
 
-`以下可以不用安装`
+# 以下可以不用安装
 
 ## 安装 font-awesome
 `cnpm i font-awesome --save-dev`
