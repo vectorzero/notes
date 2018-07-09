@@ -1,6 +1,8 @@
 ## 步骤
 
-### 创建文件夹 *lxl-cli-demo*
+### 创建文件夹
+
+*lxl-cli-demo*
 
 ### 执行命令
 
@@ -8,13 +10,15 @@
 
 `npm init -y`
 
-### 创建文件 *./bin/index.js*
+### 创建文件
 
 *./bin/index.js*
 ```js
-`#!/usr/bin/env node`
+#!/usr/bin/env node
 console.log('hello cli')
 ```
+
+### 修改文件
 
 *package.json*
 ```json
@@ -34,6 +38,7 @@ console.log('hello cli')
   "license": "ISC"
 }
 ```
+
 ### 全局安装
 
 `npm install -g`
