@@ -8,6 +8,8 @@
 
 ### [Parcel](https://github.com/vectorzero/notes/tree/master/Parcel.md)
 
+### [ESLint](https://github.com/vectorzero/notes/blob/master/ESLint.md)
+
 ### [CLI](https://github.com/vectorzero/notes/blob/master/CLI.md)
 
 ### [Vue编码规范](https://github.com/vectorzero/notes/blob/master/VueGuide.md)
