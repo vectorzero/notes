@@ -4,7 +4,7 @@
 
 Vue是一套用于构建用户界面的渐进式框架。
 
-[官方文档](https://cn.vuejs.org/)
+点击查看：[官方文档](https://cn.vuejs.org/)
 
 ## 二、MVVM的介绍
 
@@ -95,8 +95,7 @@ vm.$data.msg === vm.msg // true
 <h1 title="{{ msg }}"></h1>
 
 ```
-更多细节以及demo可查看:
-[官方文档-起步](https://cn.vuejs.org/v2/guide/index.html)
+更多细节以及demo可查看：[官方文档-起步](https://cn.vuejs.org/v2/guide/index.html)
 
 ### 3.2 使用脚手架
 
@@ -128,8 +127,7 @@ vm.$data.msg === vm.msg // true
 
 `npm run dev`
 
-更多安装细节可查看:
-[搭建Vue脚手架](https://github.com/vectorzero/notes/tree/master/Vue.md)
+更多安装细节可查看：[搭建Vue脚手架](https://github.com/vectorzero/notes/tree/master/Vue.md)
 
 #### 3.2.2 vue文件代码结构
 ```html
@@ -209,8 +207,7 @@ vm.$data.msg === vm.msg // true
 
 * `export default` & `import`
 
-点击查看:
-[ECMAScript6 Module 的语法](http://es6.ruanyifeng.com/#docs/module)
+点击查看：[ECMAScript6 Module 的语法](http://es6.ruanyifeng.com/#docs/module)
 
 * 数据 - `data`
 > 当一个 Vue 实例被创建时，它向 Vue 的响应式系统中加入了其 data 对象中能找到的所有的属性。
@@ -226,13 +223,11 @@ vm.$data.msg === vm.msg // true
 > props 可以是数组或对象，用于接收来自父组件的数据。
 > props 可以是简单的数组，或者使用对象作为替代，对象允许配置高级选项，如类型检测、自定义校验和设置默认值。
 
-更多细节以及demo可查看:
-[官方文档-props](https://cn.vuejs.org/v2/api/#props)
+更多细节以及demo可查看：[官方文档-props](https://cn.vuejs.org/v2/api/#props)
 
 * 组件 - `components`
 
-更多细节以及demo可查看:[官方文档-components](https://cn.vuejs.org/v2/guide/components.html
-)
+更多细节以及demo可查看: [官方文档-components](https://cn.vuejs.org/v2/guide/components.html)
 
 * 监视数据变化 - `watch`
 
@@ -263,8 +258,7 @@ new Vue({
 })
 ```
 
-更多细节以及demo可查看:
-[官方文档-watch](https://cn.vuejs.org/v2/api/#watch)
+更多细节以及demo可查看：[官方文档-watch](https://cn.vuejs.org/v2/api/#watch)
      
 * 计算属性 - `computed`
 
@@ -286,8 +280,7 @@ var vm = new Vue({
 })
 ```
 
-更多细节以及demo可查看:
-[官方文档-computed](https://cn.vuejs.org/v2/api/#computed)
+更多细节以及demo可查看：[官方文档-computed](https://cn.vuejs.org/v2/api/#computed)
 
 * 生命周期
 
@@ -343,7 +336,7 @@ var vm = new Vue({
 
 说明：Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。
 
-更多细节以及demo可查看:[官方文档-选项 / 生命周期钩子](https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90)
+更多细节以及demo可查看：[官方文档-选项 / 生命周期钩子](https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90)
 
 
 
