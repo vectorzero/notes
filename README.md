@@ -1,4 +1,3 @@
-### notes
 
 [Vue脚手架](https://github.com/vectorzero/notes/tree/master/Vue.md)
 
@@ -19,3 +18,5 @@
 [CSS编码规范](https://github.com/vectorzero/notes/blob/master/CssGuide.md)
 
 [LESS编码规范](https://github.com/vectorzero/notes/blob/master/LessGuide.md)
+
+[Vue学习(1)](https://github.com/vectorzero/notes/tree/master/VueLearn1.md)
