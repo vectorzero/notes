@@ -50,6 +50,72 @@ console.log(1e2) //100
 
 而*throttle*适合指定每隔一定时间间隔内执行不超过一次的情况，例如拖动滚动条，移动鼠标的事件处理等。
 
+### 防抖
+```html
+<input />
+<div id="res"></div>
+```
 ```javascript
+const $input = document.querySeletor('input');
+const $res = document.getElementById('res');
+function debounce(doSomething,delay) {
+    let timeout;
+    return function() {
+        const _this = this;
+        const _arguments = arguments;
+        clearTimeout(timeout);
+        timeout = setTiemout(() => {
+            doSomething.apply(_this,_arguments);
+        },delay)
+    }
+}
+let validate = debounce(function(e){
+    $res.innerHTML = e.target.value;
+},300)
+$input.addEventListener('input',validate);
 
+```
+
+### 节流
+```html
+<div id="div" style="width: 100px; height: 100px; background: #ddaee1"></div>
+<p id="throRes"></p>
+<p id="throResII"></p>
+```
+```javascript
+const $div = document.getElementById('div');
+const $throRes = document.getElementById('throRes');
+const $throResII = document.getElementById('throResII');
+function throttle(doThrottle,threshhold = 160) {
+    let timeout;
+    let start = new Date;
+    return function() {
+        const _this = this;
+        const _arguments = arguments;
+        let current = new Date() - 0;
+
+        //总是干掉事件回调
+        clearTimeout(timeout);
+        if(current - start >= threshhold) {
+
+            //只执行一部分方法，这些方法是在某个时间段内执行一次
+            doThrottle.apply(_this,_arguments);
+            start = current;
+        }else {
+
+            //让方法在脱离事件后也能执行一次
+            timeout = setTimeout(() => {
+                doThrottle.apply(_this, _arguments)
+            },threshhold)
+        }
+    }
+}
+let mouseMove = throttle(function(e) {
+    $throRes.innerHTML = `throttle__${e.pageX},${e.pageY}`;
+})
+let mouseMoveII = function(e) {
+    $throResII.innerHTML = `normal__${e.pageX},${e.pageY}`;
+}
+$div.addEventListener('mousemove',mouseMove);
+$div.addEventListener('mousemove',mouseMoveII);
 ```
