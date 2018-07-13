@@ -20,3 +20,5 @@
 [LESS编码规范](https://github.com/vectorzero/notes/blob/master/LessGuide.md)
 
 [Vue学习(1)](https://github.com/vectorzero/notes/tree/master/VueLearn1.md)
+
+[Vue学习(2)](https://github.com/vectorzero/notes/tree/master/VueLearn2.md)
