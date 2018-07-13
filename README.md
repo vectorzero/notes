@@ -1,24 +1,24 @@
 
-[Vue脚手架](https://github.com/vectorzero/notes/tree/master/Vue.md)
+[Vue脚手架](https://github.com/vectorzero/notes/tree/master/docs/Vue.md)
 
-[ES6笔记](https://github.com/vectorzero/notes/tree/master/ES6.md)
+[ES6笔记](https://github.com/vectorzero/notes/tree/master/docs/ES6.md)
 
-[JS笔记](https://github.com/vectorzero/notes/tree/master/JS.md)
+[JS笔记](https://github.com/vectorzero/notes/tree/master/docs/JS.md)
 
-[Parcel](https://github.com/vectorzero/notes/tree/master/Parcel.md)
+[Parcel](https://github.com/vectorzero/notes/tree/master/docs/Parcel.md)
 
-[ESLint](https://github.com/vectorzero/notes/blob/master/ESLint.md)
+[ESLint](https://github.com/vectorzero/notes/blob/master/docs/ESLint.md)
 
-[CLI](https://github.com/vectorzero/notes/blob/master/CLI.md)
+[CLI](https://github.com/vectorzero/notes/blob/master/docs/CLI.md)
 
-[Vue编码规范](https://github.com/vectorzero/notes/blob/master/VueGuide.md)
+[Vue编码规范](https://github.com/vectorzero/notes/blob/master/docs/VueGuide.md)
 
-[JS编码规范](https://github.com/vectorzero/notes/blob/master/JsGuide.md)
+[JS编码规范](https://github.com/vectorzero/notes/blob/master/docs/JsGuide.md)
 
-[CSS编码规范](https://github.com/vectorzero/notes/blob/master/CssGuide.md)
+[CSS编码规范](https://github.com/vectorzero/notes/blob/master/docs/CssGuide.md)
 
-[LESS编码规范](https://github.com/vectorzero/notes/blob/master/LessGuide.md)
+[LESS编码规范](https://github.com/vectorzero/notes/blob/master/docs/LessGuide.md)
 
-[Vue学习(1)](https://github.com/vectorzero/notes/tree/master/VueLearn1.md)
+[Vue学习(1)](https://github.com/vectorzero/notes/tree/master/docs/VueLearn1.md)
 
-[Vue学习(2)](https://github.com/vectorzero/notes/tree/master/VueLearn2.md)
+[Vue学习(2)](https://github.com/vectorzero/notes/tree/master/docs/VueLearn2.md)

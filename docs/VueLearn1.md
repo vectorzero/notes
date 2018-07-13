@@ -127,7 +127,7 @@ vm.$data.msg === vm.msg // true
 
 `npm run dev`
 
-更多安装细节可查看：[搭建Vue脚手架](https://github.com/vectorzero/notes/tree/master/Vue.md)
+更多安装细节可查看：[搭建Vue脚手架](https://github.com/vectorzero/notes/tree/master/docs/Vue.md)
 
 #### 3.2.2 vue文件代码结构
 ```html
