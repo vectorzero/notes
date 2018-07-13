@@ -119,3 +119,12 @@ let mouseMoveII = function(e) {
 $div.addEventListener('mousemove',mouseMove);
 $div.addEventListener('mousemove',mouseMoveII);
 ```
+
+那什么时候该用 debounce 什么时候该用 throttle 呢？
+
+* input 中输入文字自动发送 ajax 请求进行自动补全： debounce
+* resize window 重新计算样式或布局：debounce
+* mouseleave 时隐藏二级菜单：debounce，并合理使用 cancel 方法
+* scroll 时更新样式，如随动效果：throttle
+
+最重要的还是理解两者对调用时间及次数上的处理，根据业务逻辑选择最合适的优化方案！
