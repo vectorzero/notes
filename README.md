@@ -22,3 +22,6 @@
 [Vue学习(1)](https://github.com/vectorzero/notes/tree/master/docs/VueLearn1.md)
 
 [Vue学习(2)](https://github.com/vectorzero/notes/tree/master/docs/VueLearn2.md)
+
+[Webpack&Babel](https://github.com/vectorzero/notes/tree/master/docs/Webpack&Babel.md)
+
