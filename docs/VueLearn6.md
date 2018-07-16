@@ -1,6 +1,6 @@
 # Webpack 发布项目
 
-* webpack 打包的各种坑
+* [webpack 打包的各种坑](https://dailc.github.io/2017/03/13/webpackfreshmanualAndBug.html)
 * webpack 命令能够生成dist目录到磁盘中，最终，把打包后的代码，部署服务器中去
 * webpack-dev-server 仅是在内存中生成的文件，并没有写到磁盘中，所以，只能在开发期间使用
 
