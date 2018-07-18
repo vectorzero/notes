@@ -74,3 +74,40 @@ var x;
 var x ;
 ({x}={x:1});
 ```
+
+## Array.prototype.includes
+用于快速查找数组中是否包含某个元素。(包括NaN，所以和indexOf不一样)。
+```js
+const arr = [1,2,3,NaN];
+console.log(arr.includes(3)) // true
+console.log(arr.indexOf(3) > 0) // true
+console.log(arr.includes(NaN)) // true
+console.log(arr.indexOf(NaN) > 0) // false
+```
+
+## 指数函数的中缀形式
+可以使用 `**` 来替代 `Math.pow`
+```js
+Math.pow(7,2) // 49
+7**2 // 49
+```
+
+## Object.values()
+`Object.values()` 函数和 `Object.keys()` 很相似，它返回一个对象中自己属性的所有值(通过原型链继承的不算)。
+```js
+const objs = [{A: 3},{B: 4},{C: 5}];
+const vals = Object.keys(objs).map(key => objs[key]); // [3,4,5]
+
+const values = Object.values(objs); // [3,4,5]
+```
+
+## Object.entries()
+`Object.entries()` 和 `Object.keys` 相关，不过 `entries()` 函数会将key和value以数组的形式都返回。
+```js
+Object.keys(objs).forEach(key => {
+    console.log(`key: ${key},value:${objs[key]}`)
+})
+for(let [key,value] of Object.entries(objs)) {
+    console.log(`key: ${key},value:${value}`)
+}
+```
