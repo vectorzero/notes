@@ -1,7 +1,7 @@
 
 [Vue脚手架](https://github.com/vectorzero/notes/tree/master/docs/Vue.md)
 
-[ES笔记](https://github.com/vectorzero/notes/tree/master/docs/ES6.md)
+[ES笔记](https://github.com/vectorzero/notes/tree/master/docs/ES.md)
 
 [JS笔记](https://github.com/vectorzero/notes/tree/master/docs/JS.md)
 
