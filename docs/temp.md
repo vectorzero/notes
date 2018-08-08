@@ -1,4 +1,4 @@
-```js
+```html
 <template>
 	<div>
 		<draggable v-model="myArray" :options="{group:'people'}" @start="drag=true" @end="drag=false">

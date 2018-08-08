@@ -3,7 +3,9 @@
 
 [ES笔记](https://github.com/vectorzero/notes/tree/master/docs/ES.md)
 
-[JS笔记](https://github.com/vectorzero/notes/tree/master/docs/JS.md)
+[JS笔记](https://github.com/vectorzero/notes/tree/master/docs/JSNotes.md)
+
+[JS基础](https://github.com/vectorzero/notes/tree/master/docs/JSBasic.md)
 
 [Parcel](https://github.com/vectorzero/notes/tree/master/docs/Parcel.md)
 
