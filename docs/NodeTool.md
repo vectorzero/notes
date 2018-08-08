@@ -26,7 +26,7 @@ let copyList = '';
 files.forEach((item,index) => {
 	copyList += `
 	<div class="wrap">
-		<div id='copy${index}'>${item}</div>
+	        <div id='copy${index}'>${item}</div>
 		<div><button onClick="copyFn('copy${index}')">Copy</button></div>
 	</div>
 	`
