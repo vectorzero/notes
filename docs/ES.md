@@ -1,5 +1,3 @@
-# ES6
-
 ## 模板字符串
 ```js
 let a = ~~(Math.random())*10;
