@@ -187,3 +187,19 @@ function saveHtml() {
 }
 
 ```
+
+### 命令行的输入输出
+```js
+const readline = require('readline');
+const rl = readline.createInterface(process.stdin, process.stdout);
+let firstInput;
+let secondInput;
+
+rl.question('what is your name? \t', function(inputI) {
+    firstInput = inputI;
+    rl.question('How old are you? \t', function(inputII) {
+        secondInput = inputII;
+		rl.close();
+    })
+});
+```
