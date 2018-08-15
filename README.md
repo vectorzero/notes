@@ -14,6 +14,8 @@
 
 [CLI](https://github.com/vectorzero/notes/blob/master/docs/CLI.md)
 
+[Mdx-Deck](https://github.com/vectorzero/notes/blob/master/docs/Mdx-Deck.md)
+
 [Vue骨架屏](https://github.com/vectorzero/notes/blob/master/docs/Vue-skeleton.md)
 
 [Vue编码规范](https://github.com/vectorzero/notes/blob/master/docs/VueGuide.md)
