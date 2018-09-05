@@ -1,5 +1,7 @@
 [Node工具](https://github.com/vectorzero/notes/tree/master/docs/NodeTool.md)
 
+[Node部署](https://github.com/vectorzero/notes/tree/master/docs/NodeDeploy.md)
+
 [Vue脚手架2.5](https://github.com/vectorzero/notes/tree/master/docs/Vue2.5.md)
 
 [Vue脚手架3](https://github.com/vectorzero/notes/tree/master/docs/Vue3.md)
