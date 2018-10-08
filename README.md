@@ -1,3 +1,5 @@
+[SQL基础教程](https://github.com/vectorzero/notes/tree/master/docs/sqlLearn1.md)
+
 [Node工具](https://github.com/vectorzero/notes/tree/master/docs/NodeTool.md)
 
 [Node部署](https://github.com/vectorzero/notes/tree/master/docs/NodeDeploy.md)
