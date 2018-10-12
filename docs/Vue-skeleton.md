@@ -1,6 +1,7 @@
 # Vue骨架屏
 
 1. 安装`prerender-spa-plugin`
+
     `npm install prerender-spa-plugin -S`
 
 2. 配置*webpack*
