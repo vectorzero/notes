@@ -203,3 +203,26 @@ rl.question('what is your name? \t', function(inputI) {
     })
 });
 ```
+
+### 调用cmd命令
+```js
+const {exec} = require('child_process');
+
+exec('calc',function (err1) {
+    if(err1) {
+        console.log(1,err1);
+    }else {
+        exec('errorCommand',function (err2) {
+            if(err2) {
+                console.log(2,err2)
+            }else {
+                exec('notepad',function (err3) {
+                    if(err3) {
+                        console.log(3,err3);
+                    }
+                })
+            }
+        })
+    }
+});
+```
