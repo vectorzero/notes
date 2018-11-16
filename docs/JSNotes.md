@@ -128,3 +128,116 @@ $div.addEventListener('mousemove',mouseMoveII);
 * scroll 时更新样式，如随动效果：throttle
 
 最重要的还是理解两者对调用时间及次数上的处理，根据业务逻辑选择最合适的优化方案！
+
+## JSON.parse() & JSON.stringify()
+
+### JSON.parse()
+
+可以接受第二个参数，它可以在返回之前转换对象值。
+
+```javascript
+const obj = {
+    name: 'xiaoming',
+    age: 18,
+    sex: '男'
+}
+const stringObj = JSON.stringify(obj);
+// 将返回对象的属性值大写：
+const resultObj = JSON.parse(stringObj,(key,value) => {
+    if(typeof value === 'string') {
+        return value.toUpperCase()
+    }
+    return value
+});
+console.log(resultObj) // { name: 'XIAOMING', age: 18, sex: '男' }
+```
+
+### JSON.stringify()
+
+可以带两个额外的参数，第一个是替换函数，第二个间隔字符串，用作隔开返回字符串。
+
+参数：
+
+1. value ： 将要转为JSON字符串的javascript对象。
+2. replacer ：该参数可以是多种类型,如果是一个函数,则它可以改变一个javascript对象在字符串化过程中的行为, 如果是一个包含 String 和 Number 对象的数组,则它将作为一个白名单.只有那些键存在域该白名单中的键值对才会被包含进最终生成的JSON字符串中.如果该参数值为null或者被省略,则所有的键值对都会被包含进最终生成的JSON字符串中。
+3. space ：该参数可以是一个 String 或 Number 对象,作用是为了在输出的JSON字符串中插入空白符来增强可读性. 如果是Number对象, 则表示用多少个空格来作为空白符; 最大可为10,大于10的数值也取10.最小可为1,小于1的数值无效,则不会显示空白符. 如果是个 String对象, 则该字符串本身会作为空白符,字符串最长可为10个字符.超过的话会截取前十个字符. 如果该参数被省略 (或者为null), 则不会显示空白符
+
+```javascript
+const obj = {
+    name: 'xiaoming',
+    age: 18,
+    sex: '男'
+}
+
+// 替换函数可以用来过滤值，因为任何返回 `undefined` 的值将不在返回的字符串中：
+function deleteAge(key,value) {
+    if(key === 'sex') {
+        return undefined
+    }
+    return value
+}
+const resultObj = JSON.stringify(obj,deleteAge,null);
+console.log(resultObj) // {"name":"xiaoming","age":18}
+
+// 传入一个间隔参数
+const resultObjII = JSON.stringify(obj,null,'...');
+console.log(resultObjII)
+// {
+// ..."name": "xiaoming",
+// ..."age": 18,
+// ..."sex": "男"
+// }
+const resultObjIII = JSON.stringify(obj,null,4);
+console.log(resultObjIII)
+// {
+//     "name": "xiaoming",
+//     "age": 18,
+//     "sex": "男"
+// }
+```
+
+### toJSON
+
+利用toJSON方法,我们可以修改对象转换成JSON的默认行为。
+
+如果一个被序列化的对象拥有 toJSON 方法，那么该 toJSON 方法就会覆盖该对象默认的序列化行为：不是那个对象被序列化，而是调用 toJSON 方法后的返回值会被序列化
+
+```javascript
+const obj = {
+    name: 'xiaoming',
+    toJSON: function() {
+        return 'hello'
+    }
+}
+console.log(JSON.stringify(obj)) // "hello"
+console.log(JSON.stringify({x:obj})) // {"x":"hello"}
+```
+
+### 用 JSON.stringify 来格式化对象
+
+在实际使用中,我们可能会格式化一些复杂的对象，这些对象往往对象内嵌套对象。直接看起来并不那么直观,结合上面的的 replacer 和 space 参数,我们可以这样格式化复杂对象：
+
+``` javascript
+var censor = function(key,value){
+    if(typeof(value) == 'function'){
+         return Function.prototype.toString.call(value)
+    }
+    return value;
+}
+var foo = {bar:"1",baz:3,o:{name:'xiaoli',age:21,info:{sex:'男',getSex:function(){return 'sex';}}}};
+console.log(JSON.stringify(foo,censor,4))
+```
+``` JSON
+{
+    "bar": "1",
+    "baz": 3,
+    "o": {
+        "name": "xiaoli",
+        "age": 21,
+        "info": {
+            "sex": "男",
+            "getSex": "function (){return 'sex';}"
+        }
+    }
+}
+```
