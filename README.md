@@ -1,4 +1,8 @@
+[Git](https://github.com/vectorzero/notes/tree/master/docs/Git.md)
+
 [SQL基础教程](https://github.com/vectorzero/notes/tree/master/docs/sqlLearn1.md)
+
+[SQL高级教程](https://github.com/vectorzero/notes/tree/master/docs/sqlLearn2.md)
 
 [Node工具](https://github.com/vectorzero/notes/tree/master/docs/NodeTool.md)
 
