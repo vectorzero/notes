@@ -241,3 +241,45 @@ console.log(JSON.stringify(foo,censor,4))
     }
 }
 ```
+
+## 逻辑判断 `if else` to `Object / Map`
+
+```javascript
+let getSth = (type) => {
+	if(type === 'a') {
+		console.log('a');
+		fnA()
+	}else if(type === 'b') {
+		console.log('b');
+		fnB()
+	}else if(type === 'c') {
+		console.log('c');
+		fnC()
+	}else {
+		console.log('d');
+		fnD()
+	}
+}
+
+let getSth = (type) => {
+	let obj = {
+		'a': () => {console.log('a');fnA()},
+		'b': () => {console.log('b');fnB()},
+		'c': () => {console.log('c');fnC()},
+		'd': () => {console.log('d');fnD()}
+	}
+	let getValue = obj[type] || obj['d']
+	getValue();
+}
+
+let getSth = (type) => {
+	let map = new Map([
+		['a',() => {console.log('a');fnA()}],
+		['b',() => {console.log('b');fnB()}],
+		['c',() => {console.log('c');fnC()}],
+		['d',() => {console.log('d');fnD()}]
+	])
+	let getValue = map.get(type) || map.get('d')
+	getValue();
+}
+```
