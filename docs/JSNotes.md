@@ -283,3 +283,61 @@ let getSth = (type) => {
 	getValue();
 }
 ```
+
+## 数组
+
+### 常用api
+
+```javascript
+const arr = [1, 2, 3, 4]
+
+Array.isArray(arr) // 判断是否为数组
+
+arr.includes(2) // true 判断数组中是否包含某项
+
+arr.findIndex(d => d === 3) // 2 找出第一个符合条件的数组成员并返回数组下标, 找不到返回 -1
+
+arr.find(d => d === 3) // 3 找出第一个符合条件的数组成员并返回, 找不到返回 undefined
+
+// es5 其他还有 filter map forEach 等，这里不做举例。
+arr.every(d => d > 2) // false 每一项都满足条件则返回 true
+
+arr.some(d => d > 2) // true 只要有一项满足条件则返回 true
+```
+
+### flat()
+
+扁平化数组，常用于将数组转化为一维数组
+
+```javascript
+const arr = [1, 2, [3, 4]]
+
+arr.flat() // [1, 2, 3, 4] 扁平化数组, 默认展开一层。
+
+const arr2 = [1, 2, [3, 4, [5, 6]]]
+
+arr2.flat() // [1, 2, 3, 4, [5, 6]]
+arr2.flat(2) // [1, 2, 3, 4, 5, 6] flat(3) 也是展开两层...
+```
+
+### flatMap()
+
+在数组执行`map`方法后执行`flat`, 用的不多，其实可以写`map`后写`flat`更好懂点。
+
+```javascript
+// flatMap()
+[2, 3, 4].flatMap(x => [x, x * 2]) //  [ 2, 4, 3, 6, 4, 8 ]
+
+// map + flat()
+[2, 3, 4].map(d => [d, d * 2]) => [[2, 4], [3, 6], [4, 8]]
+[[2, 4], [3, 6], [4, 8]].flat()
+```
+
+### 对象转数组
+
+```javascript
+const obj = { name: 'hello' }
+Object.keys(obj) // ['name']
+Object.values(obj) // ['hello']
+Object.entries(obj) // [['name', 'hello']]
+```
