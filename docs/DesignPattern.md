@@ -1,5 +1,7 @@
 ## [设计模式](https://github.com/dongyuanxin/design-patterns)
 
+### <a name="top">目录</a>
+
 1. <a href="#单例模式">单例模式</a>
 2. <a href="#策略模式">策略模式</a>
 3. <a href="#代理模式">代理模式</a>
@@ -13,7 +15,7 @@
 11. <a href="#责任链模式">责任链模式</a>
 12. <a href="#装饰者模式">装饰者模式</a>
 
-### <a name="单例模式">单例模式</a>
+### <a name="单例模式">单例模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
@@ -46,7 +48,7 @@ let s2 = Singleton.getInstance();
 console.log(s1 === s2);
 ```
 
-### <a name="策略模式">策略模式</a>
+### <a name="策略模式">策略模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
@@ -82,7 +84,7 @@ context("A");
 context("B");
 ```
 
-### <a name="代理模式">代理模式</a>
+### <a name="代理模式">代理模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
@@ -131,7 +133,7 @@ document.body.appendChild(imgNode);
 proxyImg.setSrc(imgNode, imgSrc);
 ```
 
-### <a name="迭代器模式">迭代器模式</a>
+### <a name="迭代器模式">迭代器模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
@@ -170,7 +172,7 @@ while(!myIter.end()) {
 }
 ```
 
-### <a name="订阅发布模式">订阅发布模式</a>
+### <a name="订阅发布模式">订阅发布模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
@@ -280,7 +282,7 @@ salesOffices.remove("event01", fn1);
 console.log(salesOffices.trigger("event01", 1000));
 ```
 
-### <a name="命令模式">命令模式</a>
+### <a name="命令模式">命令模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
@@ -329,7 +331,7 @@ let button = document.querySelector("button");
 setCommand(button, refreshMenuBarCommand);
 ```
 
-### <a name="组合模式">组合模式</a>
+### <a name="组合模式">组合模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
@@ -417,7 +419,7 @@ home.scan();
 扫描文件: 3号文件
 ```
 
-### <a name="享元模式">享元模式</a>
+### <a name="享元模式">享元模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
@@ -528,7 +530,7 @@ setTimeout(
 下载了3个文件，但其实只创建了2个对象
 ```
 
-### <a name="责任链模式">责任链模式</a>
+### <a name="责任链模式">责任链模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
@@ -628,7 +630,7 @@ logHandler.handle("error", "Some error occur");
 
 ```
 
-### <a name="装饰者模式">装饰者模式</a>
+### <a name="装饰者模式">装饰者模式</a> <a href="#top">⬆</a>
 
 #### 描述
 
