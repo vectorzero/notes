@@ -1,5 +1,7 @@
 [Git](https://github.com/vectorzero/notes/tree/master/docs/Git.md)
 
+[设计模式](https://github.com/vectorzero/notes/tree/master/docs/DesignPattern.md)
+
 [SQL基础教程](https://github.com/vectorzero/notes/tree/master/docs/sqlLearn1.md)
 
 [SQL高级教程](https://github.com/vectorzero/notes/tree/master/docs/sqlLearn2.md)
