@@ -1,3 +1,29 @@
+## 分支
+
+```cmd
+// 查看分支
+git branch
+
+// 切换分支
+git checkout 分支名称
+
+// 新建分支
+git branch 分支名称
+
+```
+
+## 撤回提交
+
+`git log`查看提交的信息以及版本号(按q退出)
+
+通过git reset –soft <版本号>重置至指定版本的提交，达到撤销提交的目的：
+
+`git reset --soft aa909cff2239536df14820fe086d96305b24e9f1`
+
+参数soft指的是：保留当前工作区，以便重新提交 
+
+还可以选择参数hard，会撤销相应工作区的修改，一定要谨慎使用
+
 ## .gitignore不生效
 
 .gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。
